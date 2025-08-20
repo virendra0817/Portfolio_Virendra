@@ -1,0 +1,459 @@
+.hero {
+  padding: 6rem 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #7b9ed2, #dec3e2);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  color: #1a1a1a;
+}
+
+.heroSubtitle {
+  font-size: 5rem;
+  margin-bottom: 5rem;
+  color: #1a1616;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+.heroButtons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.primaryButton,
+.secondaryButton {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.primaryButton {
+  background-color: #0070f3;
+  color: #fff;
+}
+
+.primaryButton:hover {
+  background-color: #0051c4;
+}
+
+.secondaryButton {
+  background-color: transparent;
+  color: #0070f3;
+  border: 2px solid #0070f3;
+}
+
+.secondaryButton:hover {
+  background-color: #e6f0ff;
+}
+
+.navi {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.1);
+      backdrop-filter: blur(20px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+      z-index: 1000;
+      transition: all 0.3s ease;
+}
+
+.description {
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 10 rem;
+  }
+
+.section {
+  padding: 4rem 1rem;
+  background: linear-gradient(to right, #7b9ed2, #dec3e2); /* light background for contrast */
+  font-family: 'Segoe UI', sans-serif;
+}
+.contactForm {
+  max-width: 32rem; /* same as max-w-lg */
+  margin: 0 auto; /* same as mx-auto */
+  padding: 1.5rem; /* same as p-6 */
+  background:#eaadad;/* same as bg-white */
+  border-radius: 1rem; /* same as rounded-2xl */
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+              0 4px 6px -4px rgba(0, 0, 0, 0.1); /* similar to shadow-lg */
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; /* same as gap-4 */
+}
+
+.submitButton {
+  background-color: #7296e4; /* same as bg-blue-600 */
+  color: white;
+  font-weight: 600; /* same as font-semibold */
+  padding: 0.5rem 1rem; /* py-2 px-4 */
+  border: none;
+  border-radius: 0.75rem; /* same as rounded-xl */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+  background-color: #1d4ed8; /* same as hover:bg-blue-700 */
+}
+
+.successMessage {
+  margin-top: 1rem; /* same as mt-4 */
+  color: #16a34a; /* same as text-green-600 */
+  font-weight: 500; /* same as font-medium */
+}
+
+.sectionTitle {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.sectionSubtitle {
+  text-align: center;
+  font-size: 1.125rem;
+  color: #4b5563;
+  margin-bottom: 2rem;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
+  max-width: 700px;
+  margin: 0 auto;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.contactInfo {
+  flex: 1;
+}
+
+.contactInfo h3 {
+  font-size: 1.5rem;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+.contactInfo p {
+  font-size: 1rem;
+  color: #374151;
+  margin-bottom: 0.5rem;
+}
+
+.socialLinks {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.socialLink {
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.socialLink:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+.sectionHeading {
+  text-align: center;
+  font-size: 1.5rem ;
+  font-weight: 800;
+  color: #0b0b0b; /* Dark slate (almost black) */
+  margin-bottom: 0.75rem;
+  position: relative;
+  line-height: 1.2;
+}
+
+.icon {
+  margin-right: 20px;
+  color: #020006df; /* blue shade */
+  vertical-align: middle;
+}
+.contactInfo {
+  flex: 1;
+  
+}
+.section {
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+}
+
+.section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #222;
+}
+
+.section p {
+  font-size: 1.1rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.projectCard {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.projectCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.projectCard h3 {
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  color: #111;
+}
+
+.projectCard p {
+  font-size: 1rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.techTag {
+  background-color: #eaeaea;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  color: #333;
+  font-weight: 500;
+}
+.linkButton {
+  margin-right: 10px;
+  padding: 6px 12px;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+  display: inline-block;
+}
+
+.linkButton:hover {
+  background-color: #005bb5;
+}
+
+.links {
+  margin-top: 10px;
+}
+.section1 {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  background-color: #fefefe;
+}
+
+.section h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #222;
+}
+
+.aboutContent {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.aboutText {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.7;
+}
+
+.aboutText p {
+  margin-bottom: 1.2rem;
+}
+
+.aboutText h3 {
+  margin-top: 2rem;
+  font-size: 1.3rem;
+  color: #111;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 0.3rem;
+  margin-bottom: 1rem;
+}
+
+.skillsList {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.75rem;
+  padding: 0;
+  margin: 0 0 2rem 0;
+}
+
+.skillsList li {
+  background-color: #f0f0
+}
+
+.cubeWrapper {
+  width: 100%;
+  height: 300px;
+  margin-bottom: 2rem;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.projectCard {
+  background: #f7f9fc;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.techTag {
+  background: #00bcd4;
+  color: white;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+  margin-right: 0.4rem;
+  font-size: 0.85rem;
+}
+
+.heroWrapper {
+  height: 100vh;
+  width: 100%;
+  background:linear-gradient(to right, #7b9ed2, #dec3e2);
+  position: relative;
+  overflow: hidden;
+}
+
+.heroContent {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.heroContent h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.heroContent p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.button {
+  padding: 0.8rem 1.5rem;
+  background-color: #ffffff;
+  color: #0d0d2b;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #dddddd;
+}
+.navbar {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction:row;
+  gap: 1.5rem;
+  
+  z-index: 10; /* Make sure it's on top */
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  background:rgba(0, 0, 0, 0.3);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.navbar a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+.footer {
+  background-color: #0d0d2b; /* Dark background */
+  color: white;
+  text-align: center;
+  padding: 1.5rem 1rem;
+  margin-top: 3rem;
+}
+
+.socialLinks {
+  margin-top: 0.8rem;
+}
+
+.socialLinks a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #00bfff; /* Light blue */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.socialLinks a:hover {
+  color: #1e90ff; /* Darker blue on hover */
+}
