@@ -15,6 +15,7 @@ export default function Contact() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState('');
 
   const handleChange = (e) => {
     setFormData({
@@ -27,12 +28,23 @@ export default function Contact() {
     e.preventDefault();
     setIsSubmitting(true);
 
-    // Simulate form submission
-    setTimeout(() => {
-      console.log('Form submitted:', formData);
+    setError('');
+    setSubmitted(false);
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData),
+      });
+      const result = await response.json();
+      if (!response.ok) throw new Error(result.error || 'Unable to send your message.');
       setSubmitted(true);
+      setFormData({ name: '', email: '', message: '' });
+    } catch (requestError) {
+      setError(requestError.message);
+    } finally {
       setIsSubmitting(false);
-    }, 1000);
+    }
   };
 
   return (
@@ -141,6 +153,7 @@ export default function Contact() {
               Thank you! Your message has been sent successfully.
             </motion.p>
           )}
+          {error && <p className={styles.errorMessage} role="alert">{error}</p>}
         </motion.form>
       </div>
     </motion.section>
