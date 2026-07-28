@@ -1,23 +1,12 @@
-import  styles from '@/styles/globals.css' ;
-import Hero from '@/components/VantaBackground.jsx' ;
+import '@/styles/globals.css';
 import Navbar from '@/components/Navbar';
-import VantaBackground from '@/components/VantaBackground.jsx';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Virendra_portfolio',
-  description: 'Portfolio of Virendra, Web Developer',
+  title: 'Virendra Vikram Singh | Portfolio',
+  description: 'Portfolio of Virendra Vikram Singh, web developer and AI enthusiast.',
 };
 
 export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      <body>
-        
-          <Navbar/>
-            <main style={{paddingTop:'80px'}}>{children}</main>
-         <Footer/>
-      </body>
-    </html>
-  );
+  return <html lang="en"><body><Navbar /><main>{children}</main><Footer /></body></html>;
 }

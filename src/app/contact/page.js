@@ -59,7 +59,7 @@ export default function Contact() {
         </motion.p>
       </div>
 
-      <div className={styles.contactContainer}>
+      <div className={`${styles.contactContainer} ${styles.glass}`}>
         {/* Contact Info */}
         <motion.div
           className={styles.contactInfo}
