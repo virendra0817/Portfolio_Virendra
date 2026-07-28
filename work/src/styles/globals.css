@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+:root { color-scheme: dark; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; color: #f6f8ff; font-family: Arial, Helvetica, sans-serif; background: #071127; }
+body::before, body::after { content: ""; position: fixed; pointer-events: none; z-index: -1; filter: blur(10px); }
+body::before { width: 50vw; height: 50vw; min-width: 400px; min-height: 400px; border-radius: 50%; top: -18vw; left: -12vw; background: radial-gradient(circle, rgba(46, 130, 216, 0.75), transparent 67%); }
+body::after { width: 65vw; height: 65vw; min-width: 500px; min-height: 500px; border-radius: 50%; bottom: -40vw; right: -23vw; background: radial-gradient(circle, rgba(103, 57, 177, 0.64), transparent 65%); }
+a { color: inherit; text-decoration: none; }
+button, input, textarea { font: inherit; }
